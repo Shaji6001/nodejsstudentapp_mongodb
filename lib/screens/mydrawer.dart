@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_studentwithmongodb/screens/login.dart';
 
-class Mydrawer extends StatelessWidget {
+class Mydrawer extends StatefulWidget {
+  @override
+  _MydrawerState createState() => _MydrawerState();
+}
+
+class _MydrawerState extends State<Mydrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
         children: [
           UserAccountsDrawerHeader(
-            arrowColor: Colors.red[100],
+            accountName: Text("shaji"),
             currentAccountPicture: CircleAvatar(
               foregroundColor: Colors.amber,
             ),
